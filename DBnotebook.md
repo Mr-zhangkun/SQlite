@@ -69,7 +69,9 @@ sqlite>update COMPANY set ADDRESS = 'Texas', SALARY = 20000.00;   //修改两列
 ```
 * 查询数据
 ```sql
-sqlite>select * from COMPANY;                                      //查询一行
+sqlite>.header on
+sqlite>.mode column　                                             //设置正确格式化的输出
+sqlite>select * from COMPANY;                                     //查询一行
 sqlite>select * from COMPANY where id = 2;                        //查询所有
 ```
 * 修改表名称
